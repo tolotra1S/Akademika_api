@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 namespace App\Http\Controllers;
 
@@ -40,4 +40,3 @@ class PostulePosteController extends Controller
         return response()->json(' deleted!');
     }
 }
- -->
