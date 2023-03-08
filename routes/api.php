@@ -16,6 +16,7 @@ Route::post('/save',[App\Http\Controllers\TuteurController::class, 'store']);
 Route::put('/update/{id}',[App\Http\Controllers\TuteurController::class, 'update']);
  
 Route::delete('/delete/{id}',[App\Http\Controllers\TuteurController::class, 'destroy']);
+Route::get('/tuteurs/{id}', [TuteurController::class, 'tuteurs'])->name('details.tuteur');
 
 // ==============Postuleposte============
 

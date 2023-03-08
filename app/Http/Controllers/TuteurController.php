@@ -46,4 +46,9 @@ class TuteurController extends Controller
         $tuteur->delete();
         return response()->json(' deleted!');
     }
+    public function tuteurs($id)
+    {
+        $detail = Tuteur::where('id', $id)->get();
+        return $detail;
+    }
 }
